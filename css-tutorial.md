@@ -395,8 +395,199 @@ background-size: cover;
 ### ผลการทดลอง
 ```html
 [วางโค้ดที่นี่]
+<head>
+    <style>
+        p {
+            color: blue;
+            font-size: 16px;
+        }
+    </style>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NFT Image Card</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Sarabun', sans-serif;
+        }
+
+        nav {
+            background-color: #2c3e50;;
+            padding: 15px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav > ul > li {
+            margin: 0 10px;
+        }
+
+        .menu-item {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
+        .menu-item:hover {
+            background-color: #555;
+            border-radius: 3px;
+        }
+        
+        #active {
+            background-color: #007bff;
+            border-radius: 3px;
+        }
+
+        .product-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .product-card {
+            width: 300px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            background-color: white;
+            margin-bottom: 20px;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 15px;
+        }
+
+        .product-title {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            color: #007bff;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .product-description {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .product-button {
+            display: block;
+            background: linear-gradient(to right, #28a745, #218838); /* Change this to your desired gradient */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            margin-top: 15px;
+            border-radius: 4px;
+        }
+
+        .product-button:hover {
+            background: linear-gradient(to right, #218838, #1e7e34); /* Change this to a slightly darker gradient */
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" class="menu-item">หน้าแรก</a></li>
+            <li><a href="#" class="menu-item" id="active">สินค้า</a></li>
+            <li><a href="#" class="menu-item">เกี่ยวกับเรา</a></li>
+            <li><a href="#" class="menu-item">ติดต่อ</a></li>
+        </ul>
+    </nav>
+
+    <h1>NFT Image Card</h1>
+
+    <div class="product-container">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="image/product1.jpg" alt="Gabriel Omar Batistuta">
+            </div>
+            <div class="product-info">
+                <h2 class="product-title">Monkey Series 1</h2>
+                <p class="product-price">฿75,000</p>
+                <p class="product-description">
+                    <h2>Collection Spaceman</h2>
+                    No. 10/99
+
+
+                </p>
+                <a href="#" class="product-button">Add to Cart</a>
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <div class="product-image">
+                <img src="image/product2.jpg" alt="andrea pirlo">
+            </div>
+            <div class="product-info">
+                <h2 class="product-title">Monkey Series 2</h2>
+                <p class="product-price">฿19,000</p>
+                <p class="product-description">
+                    <h2>Collection Gangster</h2>
+                    No. 15/99
+                </p>
+                <a href="#" class="product-button">Add to Cart</a>
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <div class="product-image">
+                <img src="image/product3.jpg" alt="Thierry Daniel Henry">
+            </div>
+            <div class="product-info">
+                <h2 class="product-title">Monkey Series 3</h2>
+                <p class="product-price">฿20,000</p>
+                <p class="product-description">
+                    <h2>Collection Dentistg</h2>
+                    No. 9/99
+                </p>
+                <a href="#" class="product-button">Add to Cart</a>
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <div class="product-image">
+                <img src="image/product4.jpg" alt="Paul Scholes">
+            </div>
+            <div class="product-info">
+                <h2 class="product-title">Monkey Series 4</h2>
+                <p class="product-price">฿30,000</p>
+                <p class="product-description">
+                    <h2>Collection Superman</h2>
+                    No. 17/99
+                </p>
+                <a href="#" class="product-button">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![image](https://github.com/user-attachments/assets/6d9417d1-5396-41af-b468-6c55ba4867dc)
 
 [](#การทดลองที่-4-การจัดการขนาดและระยะห่าง)
 ## การทดลองที่ 4: การจัดการขนาดและระยะห่าง
